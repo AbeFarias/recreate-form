@@ -1,2 +1,72 @@
+<div class="container">
+  <div class="row justify-content-md-center">
+    <div class="col-12 col-md-8 form-box">
+      <form [formGroup]="signupForm">
+        Conditional Form :^]
+        
+        <div class="form-group row">
+          <label for="name" class="col-sm-2 col-form-label">Name</label>
+          <div class="col-sm-8">
+            <input type="text" class="form-control" formControlName="name">
+          </div>
+        </div>
 
+        <div class="form-group row">
+          <label for="email" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-8">
+            <input type="text" class="form-control" formControlName="email">
+          </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="website" class="col-sm-2 col-form-label">Website</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control" formControlName="website">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="chooseDevice" class="col-sm-2 col-form-label">Choose Device</label>
+            <div class="col-sm-8">
+              <select class="form-control" id="chooseDevice">
+                <option>Mobile</option>
+                <option>Tablet</option>
+                <option>PC</option>
+                <option>Microwave</option>
+                <option>Potato Clock</option>
+              </select>
+            </div>
+        </div>
+
+        <div class="form-check row">
+          <div class="col-auto" id="colorTitle">Choose a color!</div>
+            
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label col-sm-2" for="defaultCheck1">
+              Red
+            </label>
+
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label col-sm-2" for="defaultCheck1">
+              Blue
+            </label>
+
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label col-sm-2" for="defaultCheck1">
+              Green
+            </label>
+        </div>
+
+        <div class="form-group row"> 
+            <label for="chooseDevice" class="col-sm-2 col-form-label">Product Quantity</label>
+            <div class="col-sm-8">
+              <input class="form-control" placeholder="Only numbers plz" type="number">  
+            </div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>
+  
 
