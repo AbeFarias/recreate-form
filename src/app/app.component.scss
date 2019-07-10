@@ -12,3 +12,31 @@
 .row{
     margin: 37px;
 }
+
+#bookingDateStart{
+    padding-right: 108px;
+}
+
+#bookingDateEnd{
+    justify-content: center;
+    display: inline-grid;
+    padding-left: 73px;
+}
+
+#colorTitle{
+    padding-left: 0px;
+    padding-right: 33px;
+}
+
+#colorMenu{
+    padding-left: 0.85rem;
+}
+
+#bookingTitle {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+#bookingTitle, #start{
+    margin: .4rem 0;
+}

@@ -38,8 +38,8 @@
             </div>
         </div>
 
-        <div class="form-check row">
-          <div class="col-auto" id="colorTitle">Choose a color!</div>
+        <div class="form-check row" id="colorMenu">
+          <div class="col-auto" style="display: inline-block" id="colorTitle">Choose a color!</div>
             
             <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
             <label class="form-check-label col-sm-2" for="defaultCheck1">
@@ -62,6 +62,35 @@
             <div class="col-sm-8">
               <input class="form-control" placeholder="Only numbers plz" type="number">  
             </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="bookingDate" class="col-sm-2 col-form-label" id="bookingTitle">Booking Date:</label>
+          <div class="col-sm-8" id="bookingDateStart" style="padding-right: 108px">
+            From
+            <input class="form-control" type="date" id="dateStart" name="trip-start" value="2019-04-20" min="2019-01-01" max="2025-12-31">
+          </div>
+          <div class="col-sm-8" id="bookingDateEnd">
+            To
+            <input class="form-control" type="date" id="dateEnd" name="trip-start" value="2020-04-20" min="2019-01-01" max="2025-12-31">
+            </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="priceRange" class="col-sm-2 col-form-label">Price Range</label>
+          <div class="col-sm-8">
+            <input type="range" class="form-control" formControlName="priceRange" min="0" max="100">
+          </div>
+        </div>
+
+        <div>
+          <input formControlName="addFeedback" type="checkbox">
+          
+          {{ signupForm.value.submittedDate | json }}
+          
+          <textarea *ngIf="signupForm.value.addFeedback" formControlName="feedbackText" rows="10">
+            my area
+          </textarea>
         </div>
 
       </form>

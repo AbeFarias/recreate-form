@@ -6,9 +6,10 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
 export class AppComponent implements OnInit {
   title = 'recreate-form';
-
+  
   signupForm: FormGroup;
 
   ngOnInit() {
